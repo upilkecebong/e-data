@@ -1,0 +1,18 @@
+.header {
+    background-image: url('images/banner.png'); /* Ganti 'gambar.jpg' dengan URL gambar yang ingin Anda gunakan */
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    align-items: center;
+    align-items: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height of the fixed footer */
+    background-color: #f8f9fa;
+    line-height: 50px;
+    text-align: center;
+  }
