@@ -1,2 +1,2 @@
 # e-data
-isinya huru hara dalam belajar ngoding bersama bapak guru
+kerjaain project sambil beajar pake bootrsap 5  
