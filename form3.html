@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <title>E-DATA | Input Data Karya Ilmiah</title>
+  </head>
+
+  <body style="background-color: #f2f2f8">
+    <div class="container input-box d-flex flex-column justify-content-center mt-4 mb-4">
+      <!-- wizard  -->
+      <div class="container wizard d-flex justify-content mb-3">
+        <div class="w-100 wizard-content text-white">INPUT DATA MAHASISWA</div>
+        <div class="w-100 wizard-content text-white">INPUT DATA AKADEMIK</div>
+        <div class="w-100 wizard-content text-white bg-primary">UPLOAD DATA KARYA ILMIAH</div>
+      </div>
+      <!-- form  -->
+      <form action="#" method="post">
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD HALAMAN COVER / SAMPUL</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="hal-cover" id="cover" name="cover"/>
+            </div>
+            <div class="form-text fw-light">Pilih File (Format PDF)</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD HALAMAN JUDUL</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="hal-judul" id="hal-judul" name="hal-judul"/>
+            </div>
+            <div class="form-text fw-light">Pilih File (Format PDF)</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD HALAMAN ABSTRAK (IN)</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="abstrak-in" id="abstrak-in" name="abstrak-in"/>
+            </div>
+            <div class="form-text fw-light">Pilih File abstrak dalam Bahasa Indoneisa (Format PDF)</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD HALAMAN ABSTRAK (ENG)</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="abstrak-eng" id="abstrak-eng" name="abstrak-eng"/>
+            </div>
+            <div class="form-text fw-light">Pilih File abstrak dalam Bahasa Inggris (Format PDF)</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD HALAMAN PERSETUJUAN</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="hal-persetujuan" id="hal-persetujuan" name="hal-persetujuan" />
+            </div>
+            <div class="form-text fw-light">Pilih File (Format PDF)</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD HALAMAN PENGESAHAN</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="hal-pengesahan" id="hal-pengesahan" name="hal-pengesahan"/>
+            </div>
+            <div class="form-text fw-light">Pilih File (Format PDF)</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD PERNYATAAN KEASLIAN</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="keaslian" id="keaslian" name="keaslian"/>
+            </div>
+            <div class="form-text fw-light">Pilih File (Format PDF)</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD HALAMAN LAMPIRAN</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="hal-lapiran" id="hal-lapiran" name="hal-lapiran"/>
+            </div>
+            <div class="form-text fw-light">Pilih File (Format PDF)</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD DOKUMEN LENGKAP</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="dok-pdf" id="dok-pdf" name="dok-pdf"/>
+            </div>
+            <div class="form-text fw-light">
+              Pilih File (Format PDF). Upload dokumen jadi (TA, SKRIPSI,TESIS,DISERTASI) dari cover/sampul, logo, judul, persetujuan, pengesahan, pernyataan keaslian, abstrak in dan eng, ucapan
+              terimakasih, daftar isi, daftar gambar, daftar lampiran, daftar istilah, bab 1-6, daftar rujukan, lampiran, riwayat hidup, dalam bentuk 1 file pdf dengan halaman yang sudah berurutan
+              sesuai dengan daftar isi.
+            </div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD DOKUMEN ARTIKEL</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="dok-artikel" id="dok-artikel" name="dok-artikel"/>
+            </div>
+            <div class="form-text fw-light mb-1">Pilih File (Format PDF). Upload dokumen artikel tentang karya tulis (TA, SKRIPSI, TESIS, DIERTASI) yang sudah dibuat.</div>
+            <input type="file" class="form-control" for="link-pub" id="link-pub" name="link-pub"/>
+            <div class="form-text fw-light mb-1">Masukan Link Publised. Upload dokumen artikel tentang karya tulis (TA, SKRIPSI, TESIS, DIERTASI) yang sudah dibuat.</div>
+            <input type="file" class="form-control" for="index-jurnal" id="index-jurnal" name="index-jurnal"/>
+            <div class="form-text fw-light mb-1">Masukkan Index Jurnal Publisher. Contoh : scopus. DOAJ.dll</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-50 m-0">UPLOAD DOKUMEN LENGKAP</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input type="file" class="form-control" for="dok-rar" id="dok-rar" name="dok-rar"/>
+            </div>
+            <div class="form-text fw-light">
+              Pilih File (Format RAR) Max 5MB. Upload semua dokumen (Cover, Artikel, File Presentasi, Abstrak, Daftar Pustaka, Lembar Persetujuan, Lembar Pengesahan, dan Lampiran, Bab 1- Bab 6).
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- button  -->
+      <div class="container d-flex justify-content-center align-items-center mt-3">
+        <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">BACK</button>
+        <button type="submit" class="btn btn-primary ms-2">UPLOAD</button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
