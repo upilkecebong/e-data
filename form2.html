@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head  -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <title>E-DATA | Input Data Akadmik</title>
+  </head>
+  <!-- body  -->
+  <body style="background-color: #f2f2f8">
+    <div class="container input-box d-flex flex-column justify-content-center mt-4 mb-4">
+      <div class="container wizard d-flex justify-content mb-3">
+        <div class="w-100 wizard-content text-white">INPUT DATA MAHASISWA</div>
+        <div class="w-100 wizard-content text-white bg-primary">INPUT DATA AKADEMIK</div>
+        <div class="w-100 wizard-content text-white">UPLOAD DATA KARYA ILMIAH</div>
+      </div>
+      <!-- form  -->
+      <form action="#" method="post">
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-25 m-0">KATEGORI</label>
+          <select class="form-select" for="kategori" id="kategori" name="kategori">
+            <option value="" class="text-grey">Pilih Kategori Dokumen Karya Ilmiah</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-25 m-0">BAHASA</label>
+          <select class="form-select" for="bahasa" id="bahasa" name="bahasa">
+            <option value="" class="text-muted">Pilih Bahasa</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-25 m-0">DOSEN PA</label>
+          <input   class="form-control" for="dosen-pa" id="dosen-pa" name="dosen-pa" type="search" placeholder="Search Nama Dosen Pembimbing Akadmik" aria-label="Search" />
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-25 m-0">DOSEN PEMBIMBING</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input class="form-control" for="dospem" id="dospem" name="dospem" type="search" placeholder="Search Nama Dosen Pembimbing" aria-label="Search" />
+              <button type="button" class="btn btn-secondary">+</button>
+              <!-- button belum bisa memanggil icon dari font awesome -->
+            </div>
+            <div class="form-text fw-light">Klik icon tambah untuk menambahkan dosen pembimbing</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-25 m-0">DOSEN PENGUJI</label>
+          <div class="d-flex flex-column w-100">
+            <div class="d-flex flex-lg-row">
+              <input class="form-control" for="dosen-penguji" id="dosen-penguji" name="dosen-penguji" type="search" placeholder="Search Nama Dosen Penguji" aria-label="Search" />
+              <button type="button" class="btn btn-secondary">+</button>
+              <!-- button belum bisa memanggil icon dari font awesome -->
+            </div>
+            <div class="form-text fw-light">Klik icon tambah untuk menambahkan dosen penguji</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-25 m-0">DOSEN EKSTRENAL</label>
+          <div class="d-flex flex-column w-100">
+            <input class="form-control bg-white" for="dosen-eksternal" id="dosen-eksternal" name="dosen-eksternal" type="text" placeholder="Tuliskan Nama Dosen Penguji Ekstrenal Dalam Ujian Disertasi" />
+            <div class="form-text fw-light">Khusus untuk ujian desertasi jenjang S3</div>
+          </div>
+        </div>
+        <div class="container form d-flex mt-1 mb-1">
+          <label for="#" class="form-label w-25 m-0">JUDUL</label>
+          <input class="form-control bg-white" for="judul" id="judul" name="judul" type="text" placeholder="Tuliskan Judul Karya Ilmiah..." />
+        </div>
+      </form>
+      <!-- button  -->
+      <div class="container d-flex justify-content-center align-items-center mt-3">
+        <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">BACK</button>
+        <button type="button" class="btn btn-primary ms-2">NEXT</button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
